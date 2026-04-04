@@ -7,7 +7,7 @@
     <meta name="description" content="Get in touch with 920 Window Pros for professional window cleaning and pressure washing services. Free quotes, fast response times, serving Milwaukee to Green Bay, Wisconsin.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         .contact-form {
@@ -20,23 +20,29 @@
         .form-label {
             display: block;
             margin-bottom: var(--space-xs);
-            font-weight: var(--font-medium);
+            font-size: var(--text-sm);
+            font-weight: var(--font-semibold);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
             color: var(--color-heading-primary);
         }
         .form-input, .form-select, .form-textarea {
             width: 100%;
-            padding: var(--space-md);
-            border: 2px solid var(--color-border);
-            border-radius: var(--radius-md);
+            padding: var(--space-md) var(--space-lg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
             font-family: var(--font-body);
             font-size: var(--text-base);
+            font-weight: var(--font-light);
             color: var(--color-body-primary);
             background: var(--color-white);
-            transition: border-color var(--transition-base);
+            box-shadow: var(--shadow-sm);
+            transition: border-color var(--transition-base), box-shadow var(--transition-base);
         }
         .form-input:focus, .form-select:focus, .form-textarea:focus {
             outline: none;
             border-color: var(--color-teal);
+            box-shadow: 0 0 0 3px rgba(75, 190, 206, 0.2);
         }
         .form-textarea {
             min-height: 120px;
@@ -159,8 +165,7 @@
                     <a href="/index" class="footer-brand-lockup" aria-label="920 Window Pros LLC — Home">
                         <img src="assets/images/logo-920-window-pros-mark.png" alt="" width="644" height="490" class="footer-brand-lockup__mark" decoding="async">
                         <span class="footer-brand-lockup__text">
-                            <span class="footer-brand-lockup__line">920 windows</span>
-                            <span class="footer-brand-lockup__line">pros LLC</span>
+                            <span class="footer-brand-lockup__line">920 Window Pros LLC</span>
                             <span class="footer-brand-lockup__line footer-brand-lockup__line--est">est. 2023</span>
                         </span>
                     </a>

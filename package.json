@@ -1,0 +1,10 @@
+{
+  "name": "920window",
+  "private": true,
+  "scripts": {
+    "dev": "serve src -l 5173"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

@@ -7,7 +7,7 @@
     <meta name="description" content="Professional residential window cleaning and pressure washing serving Milwaukee to Green Bay, Wisconsin. Locally owned, insured, and reliable.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         .stats-grid {
@@ -28,34 +28,7 @@
             font-size: var(--text-sm);
             color: var(--color-white);
             font-weight: var(--font-medium);
-        }
-        .service-card {
-            text-align: center;
-            position: relative;
-        }
-        .card-step-marker {
-            width: 56px;
-            height: 56px;
-            background-color: var(--color-teal-dark);
-            border-radius: var(--radius-full);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto var(--space-lg);
-            font-family: var(--font-display);
-            font-size: var(--text-xl);
-            font-weight: var(--font-bold);
-            color: var(--color-white);
-        }
-        .card-step-marker--silhouette {
-            background-color: rgba(26, 46, 59, 0.08);
-            border: 1px solid rgba(26, 46, 59, 0.2);
-            color: var(--color-navy);
-        }
-        .card-step-marker--silhouette svg {
-            width: 26px;
-            height: 26px;
-            flex-shrink: 0;
+            letter-spacing: 0.04em;
         }
         .testimonial-card {
             position: relative;
@@ -69,10 +42,14 @@
         .quote-text {
             font-style: italic;
             margin-bottom: var(--space-lg);
-            color: var(--color-navy);
+            color: var(--color-cool-gray);
+            font-weight: var(--font-light);
+            line-height: 1.65;
         }
         .reviewer-name {
             font-weight: var(--font-semibold);
+            font-size: var(--text-sm);
+            letter-spacing: 0.02em;
             color: var(--color-cool-gray);
         }
         .final-cta-section {
@@ -130,20 +107,44 @@
     <!-- HEADER END -->
 
     <main>
-        <!-- Hero Section - photo + veil (same asset as former contact hero) -->
-        <section class="section page-hero home-hero-photo js-hero-mist fade-in" style="--mist-x: 50%; --mist-y: 48%;">
-            <div class="home-hero-photo__layers" aria-hidden="true">
-                <div class="home-hero-photo__image"></div>
-                <div class="home-hero-photo__veil"></div>
-            </div>
+        <!-- Hero — split layout (content + visual) -->
+        <section class="section home-hero-split fade-in">
             <div class="container">
-                <div class="page-hero__inner">
-                    <h1 class="page-hero__title">Spotless Windows. Serious Results.</h1>
-                    <div class="page-hero__rule" aria-hidden="true"></div>
-                    <p class="page-hero__lead">Serving Milwaukee to Green Bay — residential window cleaning and pressure washing done right.</p>
-                    <div class="page-hero__actions">
-                        <a href="/contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
-                        <a href="/services" class="btn btn-secondary btn-lg">See Our Services</a>
+                <div class="home-hero-split__grid">
+                    <div class="home-hero-split__content">
+                        <a href="/about" class="home-hero-split__kicker">Wisconsin-owned since 2023</a>
+                        <h1 class="home-hero-split__title">Spotless Windows. Serious Results.</h1>
+                        <p class="home-hero-split__lead">Residential window cleaning and pressure washing from Milwaukee to Green Bay — careful crews, pro equipment, and finishes you can see from the curb.</p>
+                        <ul class="home-hero-split__checks" aria-label="Why homeowners choose us">
+                            <li>
+                                <span class="home-hero-split__check" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                </span>
+                                Streak-free interior &amp; exterior glass, screens, and tracks
+                            </li>
+                            <li>
+                                <span class="home-hero-split__check" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                </span>
+                                Fully insured team that shows up on time, every time
+                            </li>
+                            <li>
+                                <span class="home-hero-split__check" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                                </span>
+                                Transparent pricing and free, no-obligation quotes
+                            </li>
+                        </ul>
+                        <div class="home-hero-split__actions">
+                            <a href="/contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                            <a href="/services" class="btn btn-outline btn-lg">See Our Services</a>
+                        </div>
+                        <p class="home-hero-split__note">Free quotes · Fully insured · No pressure</p>
+                    </div>
+                    <div class="home-hero-split__visual">
+                        <div class="home-hero-split__media">
+                            <img src="assets/images/work-residential-windows-02.png" alt="Residential window cleaning in progress" width="900" height="700" loading="eager" fetchpriority="high" decoding="async">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,41 +156,76 @@
                 <h2 class="text-center" style="color: #1C6E7D; margin-bottom: var(--space-sm);">Our work in the field</h2>
                 <p class="text-center lead" style="color: #6B8090; max-width: 640px; margin: 0 auto var(--space-lg);">Residential and commercial jobs across Wisconsin — the same careful crews and equipment we bring to your home.</p>
                 <div class="showcase-grid">
-                    <figure>
-                        <img src="assets/images/work-residential-windows-01.png" alt="Residential window cleaning in progress" loading="lazy" width="800" height="600">
-                        <figcaption>Residential windows</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/images/work-pressure-washing-01.png" alt="Pressure washing exterior surfaces" loading="lazy" width="800" height="600">
-                        <figcaption>Pressure washing</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/images/work-commercial-windows-01.png" alt="Commercial window cleaning" loading="lazy" width="800" height="600">
-                        <figcaption>Commercial &amp; large glass</figcaption>
-                    </figure>
+                    <article class="showcase-card">
+                        <div class="showcase-card__media">
+                            <img src="assets/images/work-residential-windows-01.png" alt="Crew cleaning residential windows with a water-fed pole" loading="lazy" width="800" height="600" decoding="async">
+                        </div>
+                        <div class="showcase-card__body">
+                            <h3 class="showcase-card__title">Residential windows</h3>
+                            <p class="showcase-card__text">Interior and exterior glass, screens, and tracks — the same careful approach we use on every home from Milwaukee to Green Bay.</p>
+                        </div>
+                    </article>
+                    <article class="showcase-card">
+                        <div class="showcase-card__media">
+                            <img src="assets/images/work-pressure-washing-01.png" alt="Pressure washing siding and exterior surfaces" loading="lazy" width="800" height="600" decoding="async">
+                        </div>
+                        <div class="showcase-card__body">
+                            <h3 class="showcase-card__title">Pressure washing</h3>
+                            <p class="showcase-card__text">Driveways, walkways, siding, decks, and patios — we lift built-up grime so your property looks maintained and inviting again.</p>
+                        </div>
+                    </article>
+                    <article class="showcase-card">
+                        <div class="showcase-card__media">
+                            <img src="assets/images/work-commercial-windows-01.png" alt="Commercial storefront and large glass cleaning" loading="lazy" width="800" height="600" decoding="async">
+                        </div>
+                        <div class="showcase-card__body">
+                            <h3 class="showcase-card__title">Commercial &amp; large glass</h3>
+                            <p class="showcase-card__text">Storefronts, offices, and tall glass — we bring the right equipment and safety practices for pro results with minimal disruption to your business.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Value Proposition - Scene B -->
-        <section class="section fade-in" style="background: #FFFFFF; color: #1A2E3B;">
+        <!-- Value proposition — “how it works” style -->
+        <section class="section value-steps fade-in" style="background: #F8FAFB; color: #1A2E3B;">
             <div class="container">
-                <div class="grid-3 js-stagger-children">
-                    <div class="card js-stagger-item">
-                        <div class="card-step-marker" aria-hidden="true">1</div>
-                        <h3 style="color: #1C6E7D;">Streak-Free Results</h3>
-                        <p>Professional-grade equipment and techniques ensure your windows are spotless inside and out, every time.</p>
-                    </div>
-                    <div class="card js-stagger-item">
-                        <div class="card-step-marker" aria-hidden="true">2</div>
-                        <h3 style="color: #1C6E7D;">Locally Owned & Operated</h3>
-                        <p>Wisconsin-based business serving our neighbors with personalized care and attention to detail.</p>
-                    </div>
-                    <div class="card js-stagger-item">
-                        <div class="card-step-marker" aria-hidden="true">3</div>
-                        <h3 style="color: #1C6E7D;">Insured & Reliable</h3>
-                        <p>Fully insured with consistent scheduling. We show up on time and get the job done right.</p>
-                    </div>
+                <header class="value-steps__intro">
+                    <p class="value-steps__eyebrow">Why choose us</p>
+                    <h2 class="value-steps__title">The 920 Window Pros difference</h2>
+                    <p class="value-steps__lead">Professional crews, honest pricing, and neighbors who treat your home like their own.</p>
+                </header>
+                <div class="value-steps__grid grid-3 js-stagger-children">
+                    <article class="value-step-card js-stagger-item">
+                        <div class="value-step-card__panel">
+                            <span class="value-step-card__badge" aria-hidden="true">1</span>
+                            <div class="value-step-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                            </div>
+                            <h3 class="value-step-card__heading">Streak-free results</h3>
+                            <p class="value-step-card__copy">Professional-grade equipment and techniques ensure your windows are spotless inside and out, every time.</p>
+                        </div>
+                    </article>
+                    <article class="value-step-card js-stagger-item">
+                        <div class="value-step-card__panel">
+                            <span class="value-step-card__badge" aria-hidden="true">2</span>
+                            <div class="value-step-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg>
+                            </div>
+                            <h3 class="value-step-card__heading">Locally owned &amp; operated</h3>
+                            <p class="value-step-card__copy">Wisconsin-based business serving our neighbors with personalized care and attention to detail.</p>
+                        </div>
+                    </article>
+                    <article class="value-step-card js-stagger-item">
+                        <div class="value-step-card__panel">
+                            <span class="value-step-card__badge" aria-hidden="true">3</span>
+                            <div class="value-step-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.7 5.2h5.5l-4.4 3.2 1.7 5.2L12 15.9 7.5 16.6l1.7-5.2L4.8 8.2h5.5L12 3z"/></svg>
+                            </div>
+                            <h3 class="value-step-card__heading">Insured &amp; reliable</h3>
+                            <p class="value-step-card__copy">Fully insured with consistent scheduling. We show up on time and get the job done right.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -221,34 +257,35 @@
         <!-- Services Overview - Scene A -->
         <section class="section fade-in" style="background: #EAF6F9; color: #1A2E3B;">
             <div class="container">
-                <h2 class="text-center" style="color: #1C6E7D;">Our Services</h2>
-                <div class="grid-2 js-stagger-children">
-                    <div class="card service-card js-stagger-item">
-                        <div class="card-step-marker card-step-marker--silhouette" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4 3h16v18H4V3zm2 2v7h6V5H6zm8 0v7h6V5h-6zM6 14v7h6v-7H6zm8 0v7h6v-7h-6z"/></svg>
+                <h2 class="text-center" style="color: #1C6E7D; margin-bottom: var(--space-2xl);">Our Services</h2>
+                <div class="grid-3 js-stagger-children">
+                    <article class="service-offering-card js-stagger-item">
+                        <div class="service-offering-card__media">
+                            <img src="assets/images/work-residential-windows-01.png" alt="Exterior window cleaning with a water-fed pole" width="800" height="500" loading="lazy" decoding="async">
                         </div>
-                        <h3 style="color: #1C6E7D;">Window Cleaning</h3>
-                        <p>Complete interior and exterior window cleaning with screen cleaning and track wipe-down. We make your windows crystal clear.</p>
-                        <ul style="text-align: left; margin-top: var(--space-lg);">
-                            <li>Interior and exterior cleaning</li>
-                            <li>Screen removal and cleaning</li>
-                            <li>Sill and track cleaning</li>
-                            <li>Eco-friendly solutions</li>
-                        </ul>
-                    </div>
-                    <div class="card service-card js-stagger-item">
-                        <div class="card-step-marker card-step-marker--silhouette" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.2c.9 2.4 3.5 5.9 3.5 9.1a3.5 3.5 0 11-7 0c0-3.2 2.6-6.7 3.5-9.1z"/><path d="M5 19.5h14v2.5H5z"/></svg>
+                        <div class="service-offering-card__body">
+                            <h3 class="service-offering-card__title">Exterior window cleaning</h3>
+                            <p class="service-offering-card__text">Sparkling clean windows that let the light shine through. We remove dirt, grime, and hard water stains.</p>
                         </div>
-                        <h3 style="color: #1C6E7D;">Pressure Washing</h3>
-                        <p>Professional pressure washing for driveways, siding, decks, patios, and fences. Restore your home's exterior to like-new condition.</p>
-                        <ul style="text-align: left; margin-top: var(--space-lg);">
-                            <li>Driveways and walkways</li>
-                            <li>House siding and trim</li>
-                            <li>Decks and patios</li>
-                            <li>Fences and outdoor surfaces</li>
-                        </ul>
-                    </div>
+                    </article>
+                    <article class="service-offering-card js-stagger-item">
+                        <div class="service-offering-card__media">
+                            <img src="assets/images/work-residential-windows-02.png" alt="Interior window cleaning for a bright, streak-free finish" width="900" height="560" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-offering-card__body">
+                            <h3 class="service-offering-card__title">Interior window cleaning</h3>
+                            <p class="service-offering-card__text">Streak-free interior glass that makes your home feel bright and welcoming.</p>
+                        </div>
+                    </article>
+                    <article class="service-offering-card js-stagger-item">
+                        <div class="service-offering-card__media">
+                            <img src="assets/images/work-commercial-windows-01.png" alt="Screen cleaning and detail work on windows" width="800" height="500" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-offering-card__body">
+                            <h3 class="service-offering-card__title">Screen cleaning</h3>
+                            <p class="service-offering-card__text">Professional screen cleaning so you get better airflow, fewer bugs, and a clearer view.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -295,8 +332,7 @@
                     <a href="/index" class="footer-brand-lockup" aria-label="920 Window Pros LLC — Home">
                         <img src="assets/images/logo-920-window-pros-mark.png" alt="" width="644" height="490" class="footer-brand-lockup__mark" decoding="async">
                         <span class="footer-brand-lockup__text">
-                            <span class="footer-brand-lockup__line">920 windows</span>
-                            <span class="footer-brand-lockup__line">pros LLC</span>
+                            <span class="footer-brand-lockup__line">920 Window Pros LLC</span>
                             <span class="footer-brand-lockup__line footer-brand-lockup__line--est">est. 2023</span>
                         </span>
                     </a>
