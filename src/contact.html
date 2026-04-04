@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Quote - 920 Window Pros LLC</title>
+    <meta name="description" content="Get in touch with 920 Window Pros for professional window cleaning and pressure washing services. Free quotes, fast response times, serving Milwaukee to Green Bay, Wisconsin.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: var(--space-lg);
+        }
+        .form-label {
+            display: block;
+            margin-bottom: var(--space-xs);
+            font-weight: var(--font-medium);
+            color: var(--color-heading-primary);
+        }
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: var(--space-md);
+            border: 2px solid var(--color-border);
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            color: var(--color-body-primary);
+            background: var(--color-white);
+            transition: border-color var(--transition-base);
+        }
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-teal);
+        }
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index" class="site-logo" aria-label="920 Window Pros LLC — Home">
+                    <img src="assets/images/logo-920-window-pros-mark.png" alt="" class="site-logo__img" width="644" height="490" decoding="async">
+                    <span class="site-logo__text">920 Window Pros LLC</span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact & Quote</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact & Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main>
+        <section class="section page-hero fade-in hero-section--ambient-soft section-accent--hero-soft js-hero-mist" style="color: #1A2E3B; --mist-x: 50%; --mist-y: 50%;">
+            <div class="container">
+                <div class="page-hero__inner">
+                    <p class="page-hero__eyebrow">Contact &amp; quote</p>
+                    <h1 class="page-hero__title">Let's Get Your Windows Sparkling</h1>
+                    <div class="page-hero__rule" aria-hidden="true"></div>
+                    <p class="page-hero__lead">Ready to see the difference professional window cleaning and pressure washing can make? Get your free quote today — no obligation, no pressure.</p>
+                    <div class="page-hero__actions">
+                        <a href="#quote-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-accent--form-soft" style="color: #1A2E3B;" id="quote-form">
+            <div class="container">
+                <div class="fade-in">
+                    <div class="text-center" style="margin-bottom: var(--space-3xl);">
+                        <h2 style="color: #1C6E7D; font-size: var(--text-4xl); font-weight: var(--font-bold); margin-bottom: var(--space-lg);">Request Your Free Quote</h2>
+                        <p class="lead" style="color: #1A2E3B; max-width: 600px; margin: 0 auto;">Fill out the form below and we'll get back to you with a detailed quote. All quotes are completely free with no obligation.</p>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Needed</label>
+                                <select id="service" name="service" class="form-select" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="window-cleaning">Window Cleaning</option>
+                                    <option value="pressure-washing">Pressure Washing</option>
+                                    <option value="both">Both Services</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address" class="form-label">Property Address</label>
+                            <input type="text" id="address" name="address" class="form-input" placeholder="Street address, city, ZIP" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Additional Details</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your specific needs, number of windows, pressure washing areas, preferred timing, or any questions you have..."></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg" style="background: #4BBECE; color: #FFFFFF;">Submit Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER START -->
+    <footer class="site-footer" style="background: #1A2E3B; color: #FFFFFF;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section footer-section--brand">
+                    <a href="/index" class="footer-brand-lockup" aria-label="920 Window Pros LLC — Home">
+                        <img src="assets/images/logo-920-window-pros-mark.png" alt="" width="644" height="490" class="footer-brand-lockup__mark" decoding="async">
+                        <span class="footer-brand-lockup__text">
+                            <span class="footer-brand-lockup__line">920 windows</span>
+                            <span class="footer-brand-lockup__line">pros LLC</span>
+                            <span class="footer-brand-lockup__line footer-brand-lockup__line--est">est. 2023</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services">Window Cleaning</a></li>
+                        <li><a href="/services">Pressure Washing</a></li>
+                        <li><a href="/services">Screen Cleaning</a></li>
+                        <li><a href="/contact">Free Quotes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Our Services</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/contact">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:9202657963">(920) 265-7963</a></li>
+                        <li><a href="mailto:920windowpros@gmail.com">920windowpros@gmail.com</a></li>
+                        <li class="footer-links__nowrap">Milwaukee – Green Bay</li>
+                        <li>@920windowpros</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 920 Window Pros LLC. All rights reserved. | Est. 2023</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="main.js" defer></script>
+</body>
+</html>

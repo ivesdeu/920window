@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - 920 Window Pros</title>
+    <meta name="description" content="Learn about 920 Window Pros LLC - locally owned window cleaning and pressure washing company serving Milwaukee to Green Bay, Wisconsin since 2023.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-2xl);
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) {
+            .mission-vision-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-3xl);
+                align-items: stretch;
+            }
+        }
+        .mission-vision-card {
+            text-align: center;
+            padding: var(--space-2xl);
+            border-radius: var(--radius-xl);
+            background: var(--color-mist);
+            border: 1px solid var(--color-border-light);
+            box-shadow: var(--shadow-sm);
+        }
+        .mission-vision-card h2 {
+            color: var(--color-teal-dark);
+            font-size: var(--text-3xl);
+            margin-bottom: var(--space-lg);
+        }
+        .mission-vision-card .mission-text {
+            font-size: var(--text-xl);
+            line-height: var(--leading-relaxed);
+            color: var(--color-navy);
+            margin: 0;
+        }
+        .mission-vision-card .vision-text {
+            font-size: var(--text-lg);
+            line-height: var(--leading-relaxed);
+            color: var(--color-navy);
+            margin: 0;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: var(--space-xl);
+        }
+        
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--color-teal);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-lg);
+        }
+        
+        .team-photo {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-lg);
+        }
+        
+        .team-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--color-teal-dark);
+            color: var(--color-white);
+            padding: var(--space-lg);
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index" class="site-logo" aria-label="920 Window Pros LLC — Home">
+                    <img src="assets/images/logo-920-window-pros-mark.png" alt="" class="site-logo__img" width="644" height="490" decoding="async">
+                    <span class="site-logo__text">920 Window Pros LLC</span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact & Quote</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact & Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-hero fade-in hero-section--ambient-soft section-accent--hero-soft js-hero-mist" style="color: #1A2E3B; --mist-x: 50%; --mist-y: 50%;">
+            <div class="container">
+                <div class="page-hero__inner">
+                    <p class="page-hero__eyebrow">About us</p>
+                    <h1 class="page-hero__title">Built on Hard Work and Clear Standards</h1>
+                    <div class="page-hero__rule" aria-hidden="true"></div>
+                    <p class="page-hero__lead">Locally owned since 2023, 920 Window Pros LLC serves Wisconsin homeowners from Milwaukee to Green Bay with reliable, professional window cleaning and pressure washing services. We're committed to quality work and showing up when we say we will.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in" style="background: #FFFFFF; color: #1A2E3B;">
+            <div class="container">
+                <div class="mission-vision-grid js-stagger-children">
+                    <div class="mission-vision-card js-stagger-item">
+                        <h2>Our Mission</h2>
+                        <p class="mission-text">We show up on time, we do the job right, and we leave your home looking better than we found it—every visit, every window, every time.</p>
+                    </div>
+                    <div class="mission-vision-card js-stagger-item">
+                        <h2>Our Vision</h2>
+                        <p class="vision-text">To be the residential window and exterior-care team Wisconsin homeowners recommend first: known for honest quotes, careful crews, and results you notice the moment you walk through the door.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in" style="background: #EAF6F9; color: #1A2E3B;">
+            <div class="container">
+                <h2 class="text-center" style="color: #1C6E7D; margin-bottom: var(--space-3xl);">What Sets Us Apart</h2>
+                <div class="grid-3 js-stagger-children">
+                    <div class="card value-card js-stagger-item">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 11l3 3l8-8"></path>
+                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9s4.03-9 9-9c1.86 0 3.58.57 5.01 1.53"></path>
+                            </svg>
+                        </div>
+                        <h3 style="color: #1C6E7D;">Attention to Detail</h3>
+                        <p style="color: #1A2E3B;">Every window, screen, and surface gets the thorough treatment it deserves. We don't cut corners or rush through jobs.</p>
+                    </div>
+                    <div class="card value-card js-stagger-item">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="color: #1C6E7D;">Always Insured</h3>
+                        <p style="color: #1A2E3B;">Fully licensed and insured for your peace of mind. Your property is protected, and our work is guaranteed.</p>
+                    </div>
+                    <div class="card value-card js-stagger-item">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 style="color: #1C6E7D;">Friendly Service</h3>
+                        <p style="color: #1A2E3B;">We treat your home with respect and communicate clearly throughout the process. No surprises, just results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in" style="background: #FFFFFF; color: #1A2E3B;">
+            <div class="container">
+                <div class="grid-2" style="gap: var(--space-3xl); align-items: center;">
+                    <div class="fade-left">
+                        <h2 style="color: #1C6E7D; margin-bottom: var(--space-lg);">Meet the Team</h2>
+                        <p class="lead" style="color: #1A2E3B; margin-bottom: var(--space-lg);">Founded by Wisconsin natives who understand what it means to take care of your neighbors' homes. We started 920 Window Pros because we saw too many fly-by-night services that didn't stand behind their work.</p>
+                        <p style="color: #1A2E3B;">Today, we're proud to serve communities throughout southeastern Wisconsin with the same standards we'd want for our own families.</p>
+                    </div>
+                    <div class="team-photo fade-right">
+                        <img src="assets/images/work-team-on-site-01.png" alt="920 Window Pros team on a job site" width="800" height="600" style="width: 100%; height: auto; display: block;">
+                        <div class="team-caption">
+                            <p style="margin: 0; color: white;">Locally owned and operated in Wisconsin since 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in" style="background: #EAF6F9; color: #1A2E3B;">
+            <div class="container text-center">
+                <h2 style="color: #1C6E7D; margin-bottom: var(--space-lg);">Wisconsin Proud</h2>
+                <p class="lead" style="color: #1A2E3B; margin-bottom: var(--space-xl); max-width: 800px; margin-left: auto; margin-right: auto;">As a Wisconsin-based small business, we're invested in our communities. When you choose 920 Window Pros, you're supporting local jobs and working with people who understand the unique challenges of maintaining homes in our climate.</p>
+                <p style="color: #6B8090; margin-bottom: var(--space-2xl);">Serving from Milwaukee to Green Bay and everywhere in between</p>
+                <a href="/contact" class="btn btn-primary btn-lg">Work With Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" style="background: #1A2E3B; color: #FFFFFF;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section footer-section--brand">
+                    <a href="/index" class="footer-brand-lockup" aria-label="920 Window Pros LLC — Home">
+                        <img src="assets/images/logo-920-window-pros-mark.png" alt="" width="644" height="490" class="footer-brand-lockup__mark" decoding="async">
+                        <span class="footer-brand-lockup__text">
+                            <span class="footer-brand-lockup__line">920 windows</span>
+                            <span class="footer-brand-lockup__line">pros LLC</span>
+                            <span class="footer-brand-lockup__line footer-brand-lockup__line--est">est. 2023</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services">Window Cleaning</a></li>
+                        <li><a href="/services">Pressure Washing</a></li>
+                        <li><a href="/services">Screen Cleaning</a></li>
+                        <li><a href="/contact">Free Quotes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Our Services</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/contact">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:9202657963">(920) 265-7963</a></li>
+                        <li><a href="mailto:920windowpros@gmail.com">920windowpros@gmail.com</a></li>
+                        <li class="footer-links__nowrap">Milwaukee – Green Bay</li>
+                        <li>@920windowpros</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 920 Window Pros LLC. All rights reserved. | Est. 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>

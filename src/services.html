@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | 920 Window Pros LLC</title>
+    <meta name="description" content="Professional window cleaning and pressure washing services in Milwaukee to Green Bay, Wisconsin. Interior & exterior windows, screen cleaning, driveways, siding, decks, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-accent {
+            width: 60px;
+            height: 4px;
+            background: var(--color-teal);
+            border-radius: var(--radius-full);
+            margin: var(--space-md) 0;
+        }
+        .map-placeholder {
+            background: #f8f9fa;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-cool-gray);
+            font-weight: var(--font-medium);
+        }
+        .service-features {
+            display: grid;
+            gap: var(--space-sm);
+            margin: var(--space-lg) 0;
+        }
+        .service-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+        }
+        .service-features li::before {
+            content: "✓";
+            color: var(--color-teal);
+            font-weight: var(--font-bold);
+            margin-top: 2px;
+        }
+        @media (min-width: 768px) {
+            .map-placeholder {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body style="background: var(--color-primary-bg);">
+    <!-- HEADER START -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index" class="site-logo" aria-label="920 Window Pros LLC — Home">
+                    <img src="assets/images/logo-920-window-pros-mark.png" alt="" class="site-logo__img" width="644" height="490" decoding="async">
+                    <span class="site-logo__text">920 Window Pros LLC</span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact & Quote</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact & Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section page-hero fade-in hero-section--ambient-soft section-accent--hero-soft js-hero-mist" style="color: #1A2E3B; --mist-x: 50%; --mist-y: 50%;">
+            <div class="container">
+                <div class="page-hero__inner">
+                    <p class="page-hero__eyebrow">Services</p>
+                    <h1 class="page-hero__title">What We Do Best</h1>
+                    <div class="page-hero__rule" aria-hidden="true"></div>
+                    <p class="page-hero__lead">Professional window cleaning and pressure washing services that make your home shine. From crystal-clear windows to spotless exteriors — we deliver serious results every time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Window Cleaning Service -->
+        <section class="section fade-left" style="background: #FFFFFF; color: #1A2E3B;">
+            <div class="container">
+                <div class="grid-2" style="align-items: center; gap: var(--space-4xl);">
+                    <div>
+                        <h2 style="font-family: var(--font-display); font-size: var(--text-4xl); font-weight: var(--font-bold); color: #1C6E7D; margin-bottom: var(--space-sm);">
+                            Window Cleaning
+                        </h2>
+                        <div class="service-accent"></div>
+                        <p style="font-size: var(--text-lg); color: #1A2E3B; line-height: var(--leading-relaxed); margin-bottom: var(--space-lg);">
+                            Crystal-clear windows that let the light shine in. We handle both interior and exterior cleaning with meticulous attention to detail, leaving your windows spotless and streak-free.
+                        </p>
+                        <ul class="service-features" style="color: #1A2E3B;">
+                            <li>Interior and exterior window cleaning</li>
+                            <li>Screen cleaning and maintenance</li>
+                            <li>Window track wipe-down and debris removal</li>
+                            <li>Residential focus with professional equipment</li>
+                            <li>Eco-friendly cleaning solutions</li>
+                        </ul>
+                        <div style="margin-top: var(--space-xl);">
+                            <span class="small" style="color: #6B8090; font-weight: var(--font-medium); text-transform: uppercase; letter-spacing: 0.5px;">
+                                Professional Results
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="service-photo-panel">
+                            <img src="assets/images/work-residential-windows-02.png" alt="Residential window cleaning in progress" width="900" height="700" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pressure Washing Service -->
+        <section class="section fade-right" style="background: #EAF6F9; color: #1A2E3B;">
+            <div class="container">
+                <div class="grid-2" style="align-items: center; gap: var(--space-4xl);">
+                    <div>
+                        <div class="service-photo-panel">
+                            <img src="assets/images/work-pressure-washing-01.png" alt="Pressure washing a home exterior" width="900" height="700" loading="lazy">
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="font-family: var(--font-display); font-size: var(--text-4xl); font-weight: var(--font-bold); color: #1C6E7D; margin-bottom: var(--space-sm);">
+                            Pressure Washing
+                        </h2>
+                        <div class="service-accent"></div>
+                        <p style="font-size: var(--text-lg); color: #1A2E3B; line-height: var(--leading-relaxed); margin-bottom: var(--space-lg);">
+                            Transform your home's exterior with professional pressure washing. We remove years of dirt, grime, and buildup to reveal the true beauty of your property's surfaces.
+                        </p>
+                        <ul class="service-features" style="color: #1A2E3B;">
+                            <li>Driveway and walkway cleaning</li>
+                            <li>House siding restoration</li>
+                            <li>Deck and patio deep cleaning</li>
+                            <li>Fence cleaning and maintenance</li>
+                            <li>Safe, effective pressure techniques</li>
+                        </ul>
+                        <div style="margin-top: var(--space-xl);">
+                            <span class="small" style="color: #6B8090; font-weight: var(--font-medium); text-transform: uppercase; letter-spacing: 0.5px;">
+                                Exterior Restoration
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Transparency -->
+        <section class="section-sm fade-in" style="background: #FFFFFF; color: #1A2E3B;">
+            <div class="container">
+                <div class="text-center">
+                    <div class="card" style="max-width: 800px; margin: 0 auto; padding: var(--space-3xl);">
+                        <h3 style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: var(--font-semibold); color: #1C6E7D; margin-bottom: var(--space-lg);">
+                            Transparent, Fair Pricing
+                        </h3>
+                        <p style="font-size: var(--text-lg); color: #1A2E3B; line-height: var(--leading-relaxed); margin-bottom: var(--space-xl);">
+                            Every home is different — we offer free on-site quotes with no obligation. Our pricing is based on your specific needs, home size, and service requirements. No surprises, no hidden fees, just honest estimates you can trust.
+                        </p>
+                        <a href="/contact" class="btn btn-primary btn-lg">
+                            Get Your Free Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Area -->
+        <section class="section fade-left" style="background: #EAF6F9; color: #1A2E3B;">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: var(--space-4xl);">
+                    <h2 style="font-family: var(--font-display); font-size: var(--text-4xl); font-weight: var(--font-bold); color: #1C6E7D; margin-bottom: var(--space-lg);">
+                        Where We Work
+                    </h2>
+                    <p style="font-size: var(--text-lg); color: #1A2E3B; line-height: var(--leading-relaxed); max-width: 600px; margin: 0 auto;">
+                        Proudly serving homes and businesses throughout the Milwaukee to Green Bay corridor and surrounding communities.
+                    </p>
+                </div>
+                <div class="grid-2" style="align-items: center; gap: var(--space-4xl);">
+                    <div>
+                        <h3 style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: var(--font-semibold); color: #1C6E7D; margin-bottom: var(--space-lg);">
+                            Primary Service Areas
+                        </h3>
+                        <div class="grid-2" style="gap: var(--space-lg);">
+                            <ul style="color: #1A2E3B; font-size: var(--text-lg); line-height: var(--leading-relaxed);">
+                                <li style="margin-bottom: var(--space-sm); display: flex; align-items: center; gap: var(--space-sm);">
+                                    <span style="color: #4BBECE; font-weight: var(--font-bold);">•</span>
+                                    Milwaukee, WI
+                                </li>
+                                <li style="margin-bottom: var(--space-sm); display: flex; align-items: center; gap: var(--space-sm);">
+                                    <span style="color: #4BBECE; font-weight: var(--font-bold);">•</span>
+                                    Green Bay, WI
+                                </li>
+                                <li style="margin-bottom: var(--space-sm); display: flex; align-items: center; gap: var(--space-sm);">
+                                    <span style="color: #4BBECE; font-weight: var(--font-bold);">•</span>
+                                    Appleton, WI
+                                </li>
+                            </ul>
+                            <ul style="color: #1A2E3B; font-size: var(--text-lg); line-height: var(--leading-relaxed);">
+                                <li style="margin-bottom: var(--space-sm); display: flex; align-items: center; gap: var(--space-sm);">
+                                    <span style="color: #4BBECE; font-weight: var(--font-bold);">•</span>
+                                    Oshkosh, WI
+                                </li>
+                                <li style="margin-bottom: var(--space-sm); display: flex; align-items: center; gap: var(--space-sm);">
+                                    <span style="color: #4BBECE; font-weight: var(--font-bold);">•</span>
+                                    Fond du Lac, WI
+                                </li>
+                                <li style="margin-bottom: var(--space-sm); display: flex; align-items: center; gap: var(--space-sm);">
+                                    <span style="color: #4BBECE; font-weight: var(--font-bold);">•</span>
+                                    Surrounding areas
+                                </li>
+                            </ul>
+                        </div>
+                        <p style="color: #6B8090; margin-top: var(--space-lg); font-size: var(--text-base);">
+                            Don't see your area listed? Give us a call — we're always expanding our service area to help more Wisconsin homeowners.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="service-area-photo">
+                            <img src="assets/images/work-residential-windows-01.png" alt="920 Window Pros serving homes from Milwaukee to Green Bay" width="900" height="700" loading="lazy">
+                        </div>
+                        <p class="text-center small" style="margin-top: var(--space-md); color: #6B8090;">Milwaukee to Green Bay, WI and surrounding communities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="section fade-in" style="background: #1C6E7D; color: #FFFFFF;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 style="font-family: var(--font-display); font-size: var(--text-4xl); font-weight: var(--font-bold); color: #FFFFFF; margin-bottom: var(--space-lg);">
+                        Ready to Get Started?
+                    </h2>
+                    <p style="font-size: var(--text-lg); color: #FFFFFF; opacity: 0.9; line-height: var(--leading-relaxed); margin-bottom: var(--space-xl); max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Get your free, no-obligation quote today. We'll assess your home's needs and provide transparent pricing for all our services.
+                    </p>
+                    <a href="/contact" class="btn btn-lg" style="background: #4BBECE; color: #FFFFFF; padding: var(--space-lg) var(--space-3xl); font-size: var(--text-lg); font-weight: var(--font-semibold);">
+                        Get a Quote Today
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER START -->
+    <footer class="site-footer" style="background: #1A2E3B; color: #FFFFFF;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section footer-section--brand">
+                    <a href="/index" class="footer-brand-lockup" aria-label="920 Window Pros LLC — Home">
+                        <img src="assets/images/logo-920-window-pros-mark.png" alt="" width="644" height="490" class="footer-brand-lockup__mark" decoding="async">
+                        <span class="footer-brand-lockup__text">
+                            <span class="footer-brand-lockup__line">920 windows</span>
+                            <span class="footer-brand-lockup__line">pros LLC</span>
+                            <span class="footer-brand-lockup__line footer-brand-lockup__line--est">est. 2023</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services">Window Cleaning</a></li>
+                        <li><a href="/services">Pressure Washing</a></li>
+                        <li><a href="/services">Screen Cleaning</a></li>
+                        <li><a href="/contact">Free Quotes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Our Services</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/contact">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:9202657963">(920) 265-7963</a></li>
+                        <li><a href="mailto:920windowpros@gmail.com">920windowpros@gmail.com</a></li>
+                        <li class="footer-links__nowrap">Milwaukee – Green Bay</li>
+                        <li>@920windowpros</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 920 Window Pros LLC. All rights reserved. | Est. 2023</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="main.js" defer></script>
+</body>
+</html>
