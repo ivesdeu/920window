@@ -236,6 +236,15 @@ p {
   padding: clamp(4.75rem, 10vw, 7.25rem) 0;
 }
 
+/* Home: tighter seam between “Our work in the field” and “Why choose us” */
+.section:has(.showcase-grid) {
+  padding-bottom: clamp(1.25rem, 3vw, 2rem);
+}
+
+section.section.value-steps {
+  padding-top: clamp(1.25rem, 3vw, 2rem);
+}
+
 .section-sm {
   padding: clamp(3.25rem, 7vw, 5rem) 0;
 }
@@ -1764,6 +1773,14 @@ img[src*="work-pressure-washing-01"] {
   
   .section {
     padding: clamp(6.5rem, 11vw, 8.5rem) 0;
+  }
+
+  .section:has(.showcase-grid) {
+    padding-bottom: clamp(1.5rem, 3vw, 2.75rem);
+  }
+
+  section.section.value-steps {
+    padding-top: clamp(1.5rem, 3vw, 2.75rem);
   }
 }
 
