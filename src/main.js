@@ -214,6 +214,37 @@
     });
   }
 
+  function initHeroVideoPlayback() {
+    var video = document.querySelector('.home-hero-video__video');
+    if (!video) return;
+
+    // Keep autoplay policies happy across browsers.
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+
+    function tryPlay() {
+      var p = video.play();
+      if (p && typeof p.catch === 'function') {
+        p.catch(function () {
+          // Ignore; browser may block until user gesture.
+        });
+      }
+    }
+
+    if (video.readyState >= 2) {
+      tryPlay();
+    } else {
+      video.addEventListener('loadeddata', tryPlay, { once: true });
+      video.addEventListener('canplay', tryPlay, { once: true });
+    }
+
+    // If tab/background pauses playback, resume when visible again.
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden) tryPlay();
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initScrollReveal();
     initStaggerGroups();
@@ -222,5 +253,6 @@
     initHeaderScroll();
     initHeroMistPointer();
     initSmoothAnchors();
+    initHeroVideoPlayback();
   });
 })();
