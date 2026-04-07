@@ -107,44 +107,46 @@
     <!-- HEADER END -->
 
     <main>
-        <!-- Hero — split layout (content + visual) -->
-        <section class="section home-hero-split fade-in">
+        <!-- Hero — horizontal, video-ready background -->
+        <section class="section home-hero-video fade-in">
             <div class="container">
-                <div class="home-hero-split__grid">
-                    <div class="home-hero-split__content">
-                        <a href="/about" class="home-hero-split__kicker">Wisconsin-owned since 2023</a>
-                        <h1 class="home-hero-split__title">Spotless Windows. Serious Results.</h1>
-                        <p class="home-hero-split__lead">Residential window cleaning and pressure washing from Milwaukee to Green Bay — careful crews, pro equipment, and finishes you can see from the curb.</p>
-                        <ul class="home-hero-split__checks" aria-label="Why homeowners choose us">
+                <div class="home-hero-video__frame">
+                    <div class="home-hero-video__media" aria-hidden="true">
+                        <video class="home-hero-video__video" autoplay muted loop playsinline preload="metadata" poster="assets/images/work-residential-windows-02.png">
+                            <source src="assets/videos/homehero.mov" type="video/quicktime">
+                        </video>
+                        <img class="home-hero-video__image" src="assets/images/work-residential-windows-02.png" alt="" width="900" height="700" loading="eager" fetchpriority="high" decoding="async">
+                        <div class="home-hero-video__veil"></div>
+                    </div>
+                    <div class="home-hero-video__content">
+                        <a href="/about" class="home-hero-video__kicker">Wisconsin-owned since 2023</a>
+                        <h1 class="home-hero-video__title">Spotless&nbsp;Windows. Serious Results.</h1>
+                        <p class="home-hero-video__lead">Residential window cleaning and pressure washing from Milwaukee to Green Bay — careful crews, pro equipment, and finishes you can see from the curb.</p>
+                        <ul class="home-hero-video__checks" aria-label="Why homeowners choose us">
                             <li>
-                                <span class="home-hero-split__check" aria-hidden="true">
+                                <span class="home-hero-video__check" aria-hidden="true">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                                 </span>
                                 Streak-free interior &amp; exterior glass, screens, and tracks
                             </li>
                             <li>
-                                <span class="home-hero-split__check" aria-hidden="true">
+                                <span class="home-hero-video__check" aria-hidden="true">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                                 </span>
                                 Fully insured team that shows up on time, every time
                             </li>
                             <li>
-                                <span class="home-hero-split__check" aria-hidden="true">
+                                <span class="home-hero-video__check" aria-hidden="true">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                                 </span>
                                 Transparent pricing and free, no-obligation quotes
                             </li>
                         </ul>
-                        <div class="home-hero-split__actions">
+                        <div class="home-hero-video__actions">
                             <a href="/contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
                             <a href="/services" class="btn btn-outline btn-lg">See Our Services</a>
                         </div>
-                        <p class="home-hero-split__note">Free quotes · Fully insured · No pressure</p>
-                    </div>
-                    <div class="home-hero-split__visual">
-                        <div class="home-hero-split__media">
-                            <img src="assets/images/work-residential-windows-02.png" alt="Residential window cleaning in progress" width="900" height="700" loading="eager" fetchpriority="high" decoding="async">
-                        </div>
+                        <p class="home-hero-video__note">Free quotes · Fully insured · No pressure</p>
                     </div>
                 </div>
             </div>

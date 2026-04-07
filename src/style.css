@@ -719,7 +719,7 @@ section.section.value-steps {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-md) 0;
+  padding: var(--space-xs) 0;
 }
 
 .site-logo {
@@ -895,40 +895,72 @@ img[src*="work-pressure-washing-01"] {
   display: block;
 }
 
-/* Home: split hero — copy left, rounded visual right (index.html) */
-.home-hero-split {
+/* Home: horizontal, video-ready hero with image fallback */
+.home-hero-video {
   background: var(--color-white);
-  color: var(--color-navy);
+  color: var(--color-white);
 }
 
-.home-hero-split__grid {
-  display: grid;
-  gap: clamp(var(--space-2xl), 5vw, var(--space-4xl));
+.home-hero-video > .container {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.home-hero-video__frame {
+  position: relative;
+  display: flex;
   align-items: center;
-  max-width: 72rem;
+  justify-content: center;
+  border-radius: 0;
+  overflow: hidden;
+  min-height: 100vh;
+  background: #0f2a34;
+  border: none;
+}
+
+.home-hero-video__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.home-hero-video__video,
+.home-hero-video__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.home-hero-video__video {
+  display: block;
+}
+
+.home-hero-video__image {
+  z-index: -1;
+}
+
+.home-hero-video__veil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(102deg, rgba(15, 42, 52, 0.85) 0%, rgba(15, 42, 52, 0.68) 38%, rgba(15, 42, 52, 0.28) 100%),
+    radial-gradient(ellipse 88% 78% at 12% 45%, rgba(75, 190, 206, 0.22), transparent 62%);
+}
+
+.home-hero-video__content {
+  position: relative;
+  z-index: 1;
+  max-width: min(92vw, 52rem);
   margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  text-align: center;
 }
 
-@media (min-width: 960px) {
-  .home-hero-split__grid {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: clamp(var(--space-3xl), 4vw, 3.5rem);
-    min-height: clamp(22rem, 52vh, 36rem);
-  }
-}
-
-.home-hero-split__content {
-  text-align: left;
-  max-width: 36rem;
-}
-
-@media (min-width: 960px) {
-  .home-hero-split__content {
-    max-width: none;
-  }
-}
-
-.home-hero-split__kicker {
+.home-hero-video__kicker {
   display: inline-flex;
   align-items: center;
   gap: 0.35em;
@@ -941,65 +973,70 @@ img[src*="work-pressure-washing-01"] {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--color-teal-dark);
-  background: rgba(234, 246, 249, 0.85);
-  border: 1px solid rgba(75, 190, 206, 0.45);
+  color: rgba(255, 255, 255, 0.96);
+  background: rgba(75, 190, 206, 0.3);
+  border: 1px solid rgba(173, 228, 237, 0.48);
   border-radius: var(--radius-full);
-  transition: border-color var(--transition-base), background-color var(--transition-base), color var(--transition-base);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.home-hero-split__kicker::after {
+.home-hero-video__kicker::after {
   content: "\00a0→";
   font-size: 1.05em;
   line-height: 1;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
-.home-hero-split__kicker:hover {
-  color: var(--color-teal-dark);
-  background: var(--color-mist);
-  border-color: var(--color-teal);
-}
-
-.home-hero-split__title {
+.home-hero-video__title {
   font-family: var(--font-display);
-  font-size: clamp(var(--text-4xl), 4.5vw, var(--text-6xl));
+  font-size: clamp(var(--text-4xl), 5.2vw, 4.65rem);
   font-weight: var(--font-black);
-  line-height: 1.05;
+  line-height: 1.03;
   letter-spacing: -0.035em;
-  color: var(--color-navy);
-  margin: 0 0 var(--space-lg);
+  color: #ffffff;
+  margin: 0 auto var(--space-lg);
+  max-width: none;
+  white-space: nowrap;
+  text-wrap: balance;
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
 }
 
-.home-hero-split__lead {
+.home-hero-video__lead {
   font-size: var(--text-lg);
-  font-weight: var(--font-light);
-  line-height: 1.65;
-  color: var(--color-cool-gray);
-  margin: 0 0 var(--space-xl);
-  max-width: 34rem;
+  font-weight: var(--font-normal);
+  line-height: 1.6;
+  color: rgba(243, 250, 252, 0.93);
+  margin: 0 auto var(--space-xl);
+  max-width: 40rem;
+  text-wrap: pretty;
 }
 
-.home-hero-split__checks {
+.home-hero-video__checks {
   list-style: none;
-  margin: 0 0 var(--space-2xl);
+  margin: 0 auto var(--space-2xl);
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: 0.65rem;
+  width: min(100%, 42rem);
+  max-width: min(100%, 42rem);
 }
 
-.home-hero-split__checks li {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-sm);
+.home-hero-video__checks li {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: var(--space-sm);
   font-size: var(--text-base);
   font-weight: var(--font-normal);
-  line-height: var(--leading-relaxed);
-  color: var(--color-navy);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: left;
 }
 
-.home-hero-split__check {
+.home-hero-video__check {
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -1008,57 +1045,56 @@ img[src*="work-pressure-washing-01"] {
   height: 1.5rem;
   margin-top: 0.15rem;
   border-radius: var(--radius-full);
-  background: rgba(75, 190, 206, 0.18);
-  color: var(--color-teal-dark);
+  background: rgba(173, 228, 237, 0.25);
+  color: #ffffff;
 }
 
-.home-hero-split__actions {
+.home-hero-video__actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: var(--space-md);
   margin-bottom: var(--space-lg);
 }
 
-.home-hero-split__note {
+.home-hero-video__note {
   margin: 0;
   font-size: var(--text-sm);
   font-style: italic;
   font-weight: var(--font-normal);
-  color: var(--color-cool-gray);
+  color: rgba(235, 247, 251, 0.9);
   letter-spacing: 0.01em;
 }
 
-.home-hero-split__visual {
-  position: relative;
-  min-width: 0;
+.home-hero-video .btn-outline {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.78);
 }
 
-.home-hero-split__media {
-  position: relative;
-  border-radius: var(--radius-3xl);
-  overflow: hidden;
-  background: linear-gradient(160deg, #e8f4f8 0%, #dceef3 50%, #d0e8ef 100%);
-  border: 1px solid var(--color-border-light);
-  aspect-ratio: 5 / 6;
-  max-height: min(520px, 78vh);
-  margin: 0 auto;
-  width: 100%;
+.home-hero-video .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.94);
 }
 
-@media (min-width: 960px) {
-  .home-hero-split__media {
-    max-height: min(560px, 72vh);
-    margin: 0;
+@media (max-width: 767px) {
+  .home-hero-video__frame {
+    min-height: clamp(24rem, 66vh, 33rem);
   }
-}
 
-.home-hero-split__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 42%;
-  display: block;
+  .home-hero-video__content {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .home-hero-video__checks {
+    gap: var(--space-sm);
+  }
+
+  .home-hero-video__checks li {
+    grid-template-columns: 1.35rem 1fr;
+    font-size: var(--text-sm);
+  }
 }
 
 .footer-brand-logo {
@@ -1785,9 +1821,9 @@ img[src*="work-pressure-washing-01"] {
 }
 
 /* Tighter band below sticky header; beats .section padding (incl. 1024px shorthand) */
-section.home-hero-split {
-  padding-top: clamp(var(--space-md), 2vw, var(--space-lg));
-  padding-bottom: clamp(var(--space-2xl), 5vw, var(--space-4xl));
+section.home-hero-video {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* ===== UTILITY CLASSES ===== */
