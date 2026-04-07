@@ -925,22 +925,14 @@ img[src*="work-pressure-washing-01"] {
   z-index: 0;
 }
 
-.home-hero-video__video,
-.home-hero-video__image {
+.home-hero-video__video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 42%;
-}
-
-.home-hero-video__video {
   display: block;
-}
-
-.home-hero-video__image {
-  z-index: -1;
 }
 
 .home-hero-video__veil {
