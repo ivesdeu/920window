@@ -933,6 +933,8 @@ img[src*="work-pressure-washing-01"] {
   object-fit: cover;
   object-position: center 42%;
   display: block;
+  opacity: 0;
+  transition: opacity 0.35s ease;
 }
 
 .home-hero-video__veil {
@@ -941,6 +943,13 @@ img[src*="work-pressure-washing-01"] {
   background:
     linear-gradient(102deg, rgba(15, 42, 52, 0.85) 0%, rgba(15, 42, 52, 0.68) 38%, rgba(15, 42, 52, 0.28) 100%),
     radial-gradient(ellipse 88% 78% at 12% 45%, rgba(75, 190, 206, 0.22), transparent 62%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.home-hero-video__frame.is-video-ready .home-hero-video__video,
+.home-hero-video__frame.is-video-ready .home-hero-video__veil {
+  opacity: 1;
 }
 
 .home-hero-video__content {

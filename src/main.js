@@ -216,6 +216,7 @@
 
   function initHeroVideoPlayback() {
     var video = document.querySelector('.home-hero-video__video');
+    var frame = document.querySelector('.home-hero-video__frame');
     if (!video) return;
 
     // Keep autoplay policies happy across browsers.
@@ -232,7 +233,16 @@
       }
     }
 
+    function markReady() {
+      if (frame) frame.classList.add('is-video-ready');
+    }
+
+    video.addEventListener('playing', markReady);
+    video.addEventListener('timeupdate', markReady, { once: true });
+    video.addEventListener('loadeddata', markReady, { once: true });
+
     if (video.readyState >= 2) {
+      markReady();
       tryPlay();
     } else {
       video.addEventListener('loadeddata', tryPlay, { once: true });
