@@ -26,6 +26,7 @@
   /* Typography */
   --font-display: 'Poppins', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-header: 'Helvena Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-mono: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
   
   /* Font Sizes */
@@ -723,7 +724,7 @@ section.section.value-steps {
 }
 
 .site-logo {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -750,7 +751,7 @@ section.section.value-steps {
 }
 
 .site-logo__text {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-weight: 900;
   font-size: clamp(var(--text-sm), 2.8vw, var(--text-lg));
   letter-spacing: -0.02em;
@@ -1000,7 +1001,7 @@ img[src*="work-pressure-washing-01"] {
   max-width: none;
   white-space: nowrap;
   text-wrap: balance;
-  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  text-shadow: none;
 }
 
 .home-hero-video__lead {
@@ -1225,7 +1226,7 @@ img[src*="work-pressure-washing-01"] {
 }
 
 .nav-links a {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-size: var(--text-sm);
   font-weight: var(--font-semibold);
   letter-spacing: 0.03em;
@@ -1291,7 +1292,7 @@ img[src*="work-pressure-washing-01"] {
 }
 
 .mobile-nav-links a {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-weight: var(--font-semibold);
   font-size: var(--text-lg);
   letter-spacing: 0.02em;
