@@ -1275,7 +1275,7 @@ img[src*="work-pressure-washing-01"] {
     rgba(255, 255, 255, 0.22) 62%,
     rgba(255, 255, 255, 0) 100%
   );
-  mix-blend-mode: screen;
+  mix-blend-mode: normal;
   pointer-events: none;
   animation: hero-button-shine 3.2s linear infinite;
 }
