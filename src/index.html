@@ -27,10 +27,12 @@
             font-family: var(--font-display);
         }
         .stat-label {
-            font-size: var(--text-sm);
+            font-size: 0.78rem;
             color: var(--color-white);
-            font-weight: var(--font-medium);
-            letter-spacing: 0.04em;
+            font-weight: var(--font-normal);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            opacity: 0.84;
         }
         .testimonial-card {
             position: relative;
@@ -155,18 +157,31 @@
         </section>
 
         <!-- Real project stories -->
-        <section class="section work-stories fade-in" style="background: #FFFFFF; color: #1A2E3B;">
+        <section class="section work-stories home-band-a fade-in" style="color: #1A2E3B;">
             <div class="container">
                 <h2 class="text-center" style="color: #1C6E7D; margin-bottom: var(--space-sm);">Our work in the field</h2>
                 <p class="text-center lead" style="color: #6B8090; max-width: 760px; margin: 0 auto var(--space-2xl);">From exterior glass to pressure washing and detailed screen care, we tackle every home with the same professional standards.</p>
                 <div class="work-stories__list js-stagger-children">
-                    <article class="work-story js-stagger-item">
+                    <article class="work-story is-reverse js-stagger-item">
                         <div class="work-story__copy">
                             <h3 class="work-story__title">Exterior window cleaning</h3>
-                            <p class="work-story__text">Sparkling clean windows that let light flood your home. We remove dirt, grime, and hard water so your glass looks clear from every angle.</p>
+                            <p class="work-story__text">Our exterior cleaning features a 3-in-1 service—windows, frames, and sills all cleaned in one visit. We use purified water to ensure every window is left spotless and streak-free.</p>
                         </div>
                         <div class="work-story__media">
                             <video autoplay muted loop playsinline preload="metadata" aria-label="Exterior window cleaning in progress">
+                                <source src="assets/videos/screen-cleaning-exterior.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </article>
+
+                    <article class="work-story js-stagger-item">
+                        <div class="work-story__copy">
+                            <h3 class="work-story__title">Interior window cleaning</h3>
+                            <p class="work-story__text">Sparkling clean windows that let light flood your home. We remove dirt, grime, and hard water so your glass looks clear from every angle.</p>
+                        </div>
+                        <div class="work-story__media">
+                            <video autoplay muted loop playsinline preload="metadata" aria-label="Interior window cleaning in progress">
+                                <source src="assets/videos/interior-window-cleaning-story.mp4" type="video/mp4">
                                 <source src="assets/videos/exterior-window-cleaning.mov">
                             </video>
                         </div>
@@ -179,6 +194,7 @@
                         </div>
                         <div class="work-story__media">
                             <video autoplay muted loop playsinline preload="metadata" aria-label="Pressure washing exterior surfaces in progress">
+                                <source src="assets/videos/pressure-washing-story.mp4" type="video/mp4">
                                 <source src="assets/videos/pressure-washing-card.mov">
                             </video>
                         </div>
@@ -191,6 +207,7 @@
                         </div>
                         <div class="work-story__media">
                             <video autoplay muted loop playsinline preload="metadata" aria-label="Screen cleaning in progress">
+                                <source src="assets/videos/screen-cleaning-story.mp4" type="video/mp4">
                                 <source src="assets/videos/screen-cleaning-card.mov">
                             </video>
                         </div>
@@ -200,7 +217,7 @@
         </section>
 
         <!-- Value proposition — “how it works” style -->
-        <section class="section value-steps fade-in" style="background: #F8FAFB; color: #1A2E3B;">
+        <section class="section value-steps home-band-b fade-in" style="color: #1A2E3B;">
             <div class="container">
                 <header class="value-steps__intro">
                     <p class="value-steps__eyebrow">Why choose us</p>
@@ -267,7 +284,7 @@
         </section>
 
         <!-- Services Overview - Scene A -->
-        <section class="section fade-in" style="background: #EAF6F9; color: #1A2E3B;">
+        <section class="section home-band-c fade-in" style="color: #1A2E3B;">
             <div class="container">
                 <h2 class="text-center" style="color: #1C6E7D; margin-bottom: var(--space-2xl);">Our Services</h2>
                 <div class="grid-3 js-stagger-children">
@@ -291,7 +308,10 @@
                     </article>
                     <article class="service-offering-card js-stagger-item">
                         <div class="service-offering-card__media">
-                            <img src="assets/images/work-commercial-windows-01.png" alt="Screen cleaning and detail work on windows" width="800" height="500" loading="lazy" decoding="async">
+                            <video autoplay muted loop playsinline preload="metadata" aria-label="Screen cleaning in progress">
+                                <source src="assets/videos/screen-cleaning-story.mp4" type="video/mp4">
+                                <source src="assets/videos/screen-cleaning-card.mov">
+                            </video>
                         </div>
                         <div class="service-offering-card__body">
                             <h3 class="service-offering-card__title">Screen cleaning</h3>
@@ -303,7 +323,7 @@
         </section>
 
         <!-- Testimonials - Scrolling Columns -->
-        <section class="section fade-in" style="background: #FFFFFF; color: #1A2E3B;">
+        <section class="section home-band-d fade-in" style="color: #1A2E3B;">
             <div class="container">
                 <div class="text-center" style="margin-bottom: var(--space-2xl);">
                     <span class="tag">Testimonials</span>
@@ -352,17 +372,16 @@
                         <li><a href="/services.html">Window Cleaning</a></li>
                         <li><a href="/services.html">Pressure Washing</a></li>
                         <li><a href="/services.html">Screen Cleaning</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
                         <li><a href="/contact.html">Free Quotes</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="/about.html">About Us</a></li>
-                        <li><a href="/services.html">Our Services</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
-                        <li><a href="/contact.html">Get a Quote</a></li>
-                    </ul>
+                    <h4>Service Area</h4>
+                    <p class="small" style="color: #A8C0D0; margin: 0; max-width: 22ch; line-height: 1.7;">
+                        Proudly serving homes and businesses from Milwaukee to Green Bay and surrounding Wisconsin communities.
+                    </p>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
@@ -375,11 +394,15 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 920 Window Pros LLC. All rights reserved. | Est. 2023</p>
+                <p>&copy; 920 Window Pros LLC. All rights reserved. | Est. 2023</p>
             </div>
         </div>
     </footer>
     <!-- FOOTER END -->
+
+    <div class="mobile-call-bar" aria-label="Quick call action">
+        <a class="mobile-call-bar__btn" href="tel:9202657963" aria-label="Call 920 Window Pros now">Call Now (920) 265-7963</a>
+    </div>
 
     <script src="main.js" defer></script>
 </body>
